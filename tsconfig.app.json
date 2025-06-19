@@ -16,6 +16,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "rootDir": "src", // 指定根目录为 src
     "outDir": "dist",
     "skipLibCheck": true,
     "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
