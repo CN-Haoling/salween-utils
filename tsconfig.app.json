@@ -6,17 +6,20 @@
     "src/**/*.vue"
   ],
   "exclude": [
-    "src/**/__tests__/*"
+    "src/**/__tests__/*",
+    "src/main.ts",
+    "src/App.vue"
   ],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
-    "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
+    "declaration": true, // 自动生成声明文件
+    "declarationDir": "dist" // 声明文件生成的目录
   }
 } 

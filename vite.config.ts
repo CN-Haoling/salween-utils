@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
       build: {
         lib: {
           entry: resolve(process.cwd(), 'src/index.ts'),
-          name: 'VueUIComponents',
+          name: 'SalweenUtils',
           fileName: (format) => `index.${format === 'es' ? 'mjs' : 'js'}`
         },
         rollupOptions: {

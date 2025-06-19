@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "build:lib": "vite build --mode lib",
+    "build:lib": "vite build --mode lib && vue-tsc --project tsconfig.app.json",
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",

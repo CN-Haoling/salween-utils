@@ -15,7 +15,8 @@ const components = [Button, Card]
 // 定义 install 方法，接收 Vue 作为参数
 const install = (app: App): void => {
   components.forEach((component) => {
-    app.component(component.name || component.__name, component)
+    const name = component.name || component.__name || 'UnknownComponent'
+    app.component(name, component)
   })
 }
 

@@ -15,7 +15,7 @@ echo "🔨 构建组件库..."
 npm run build:lib
 
 # 检查构建是否成功
-if [ ! -f "dist/index.js" ] || [ ! -f "dist/index.mjs" ] || [ ! -f "dist/index.d.ts" ]; then
+if [ ! -f "dist/index.js" ] || [ ! -f "dist/index.mjs" ] || [ ! -f "dist/index.d.ts" ] || [ ! -f "dist/style.css" ]; then
   echo "❌ 构建失败，缺少必要文件"
   exit 1
 fi
